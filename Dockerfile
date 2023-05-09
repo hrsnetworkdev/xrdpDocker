@@ -11,11 +11,13 @@ RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && \
     rm ngrok-stable-linux-amd64.zip
 
 # Menambahkan user baru dengan akses root
-RUN useradd -m -s /bin/bash <username> && \
-    echo '<username>:<password>' | chpasswd && \
-    usermod -aG sudo <username>
+RUN useradd -m -s /bin/bash yanz && \
+    echo 'yanz:sendalbututt' | chpasswd && \
+    usermod -aG sudo yanz
 
 # Menyalin script untuk menjalankan ngrok dan konfigurasi xrdp
+RUN wget link
+RUN chmod +x xrdp-ngrok.sh
 COPY xrdp-ngrok.sh /
 
 # Menjalankan script untuk konfigurasi xrdp dan ngrok
