@@ -16,7 +16,7 @@ RUN useradd -m -s /bin/bash yanz && \
     usermod -aG sudo yanz
 
 # Menyalin script untuk menjalankan ngrok dan konfigurasi xrdp
-RUN wget link
+RUN wget https://raw.githubusercontent.com/hrsnetworkdev/xrdpDocker/main/xrdp-ngrok.sh
 RUN chmod +x xrdp-ngrok.sh
 COPY xrdp-ngrok.sh /
 
