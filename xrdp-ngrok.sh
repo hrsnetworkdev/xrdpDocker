@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Menjalankan ngrok sebagai background process
-./ngrok authtoken <your_auth_token>
+./ngrok authtoken 2PUyZzJ23a3GOHScEXRSNGesn40_2XkaAXK3TCspRW9yXorpP
 ./ngrok tcp 3389 &
 
 # Menunggu ngrok selesai memulai
